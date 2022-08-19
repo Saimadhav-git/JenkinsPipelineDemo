@@ -17,9 +17,14 @@ pipeline {
                 echo "Deploying Job"
             }
         }
+        stage('Test'){
+            steps{
+                echo "Testing Job"
+            }
+        }
         stage('Release'){
             steps{
-                echo "Releasing jobs"
+                echo "Releasing Job"
             }
         }
     }
